@@ -1,0 +1,224 @@
+   
+ <!DOCTYPE html>
+ <html lang="en">
+     <head>
+     <title>
+         Irctc
+     </title>
+     <meta name="viewport"content="width=device-width,initial-scale=1">
+     <link rel ="stylesheet" href="css/bootstrap.min.css">
+     <style>
+         html,body{
+             margin: 0;
+             padding: 0;
+             box-sizing: border-box;
+             overflow: hidden;
+             background-color: white;
+         }
+         #nav-fixed{
+             position:fixed;
+             width: 100%;
+             border-bottom: 1px solid #f1f1f1;
+             padding: 10px 0;
+             background-color: white;
+             color: black;
+             font-weight: bold;
+             text-transform: uppercase;
+         }
+         .center{
+             display: block;
+             margin-left: auto;
+             margin-right: auto;
+             width: 300px;
+         }
+         ul{
+             list-style-type: none;
+             margin: 15px;
+             padding: 0;
+         }
+         li{
+             display: inline;
+             margin: 15px 10px;
+             padding-bottom:5px ;
+             transition: color 0.3s;
+         }
+         li:hover{
+             border-bottom: 3px solid blue;
+             color: blue;
+             cursor: pointer;
+         }
+         .active{
+             color: blue;
+             border-bottom: 3px solid blue;
+         }
+         #find-trains{
+             margin: 30px 0;
+             color: gray;
+         }
+         .search-trains-div{
+             margin: 5px o;
+             padding: 5px 0;
+         }
+         .search-trains-div div{
+             position: relative;
+             height: 100%;
+             margin: 0 5px;
+         }
+         .form-input{
+             height: 55px;
+             background-color: white;
+             border: none;
+             box-shadow: 0px 0px  5px #ccc;
+             width: 100%;
+             color: blue;
+             border-radius: 5px;
+             padding-left: 20px;
+             font-weight: bold;
+             outline: none;
+             font-size: 20px;
+         }
+         ::placeholder{
+             color: blue;
+         }
+ 
+         .search-btn{
+             width: 100%;
+             height: 55px;
+             border: none;
+             font-weight: bold;
+             color: white;
+             background-color: blue;
+             border-radius: 3px;
+         }
+         .flip-icon{
+             position: absolute;
+             left: -20px;
+             top: 13px;
+             margin: 0;
+             padding: 7px;
+             border-radius: 5px;
+             background-color: blue;
+             cursor: pointer;
+             color: blue;
+         }
+         #recent-searches{
+             margin: 30px 0;
+             color: gray;
+         }
+         .recents-card{
+             width: 100%;
+             padding:10px;
+             box-shadow: 0px 0px 10px blue;
+             border-radius: 5px;
+         }
+         .recents-card p{
+             margin: 0;
+             text-align: center;
+             font-size: 20px;
+             color: black;
+             font-weight: bold;
+ 
+         }
+     </style>
+ 
+ 
+ </head>
+    <body>
+     <img src="logo.jpg"class="center">
+       
+     <nav id="nav-fixed">
+         <div class="container">
+             <div class="d-flex">
+             <ul>
+                
+                 <li>Home</li>
+                 <li>PNR sttus</li>
+                 <li>track my train</li>
+                 <li>flights</li>
+                 <li>Buses</li>
+                 <li>Promotions</li>
+             </ul>
+         </div>
+         <section id="find-trains">
+                 <div class="container">
+                     <h4>Book train tickets</h4>
+                     <div class="d-flex search-trains-div">
+                         <div style="flex-grow:4">
+                         <input class="form-input" placeholder="From location"/></div>
+                         <div style="flex-grow: 4">
+                         <input class="form-input" placeholder="To location"/></div>
+                         <div style="flex-grow: 2">
+                         <input class="form-input" placeholder="Select date"/></div>
+                         <div style="flex-grow: 2">
+                         <button class="btn btn-success">Search</button></div>
+                     </div>
+                 </div>
+             </section>    
+             </div>
+         </section>
+         <section id="recent-searches">
+             <div class="container">
+                 <h4 class="mb-3">Recent Searches</h4>
+                 <div class="row">
+                     <div class="col-md-4">
+                     <div class="recents-card">
+                         <p>Bangalore  to<i class="fa fa-long-arrow-right"></i> Delhi</p>
+                     </div>
+                 </div>
+                 <div class="col-md-4">
+                     <div class="recents-card">
+                         <p>Delhi  to<i class="fa fa-long-arrow-right"></i> Kolkata</p>
+                     </div>
+                 </div>
+                 <div class="col-md-4">
+                     <div class="recents-card">
+                         <p>mumbai  to<i class="fa-fa-long-arrow-right"></i> Chennai</p>
+                     </div>
+                 </div>
+             </div>
+             </div>
+         </section>
+         </body>
+     <h1>YOU CAN PLAN YOUR HOIDAYS!!!!!</h1>
+     <table>
+ 
+      <tr>
+         <td>
+ 
+      <div class ="card" style="margin:30px;width:300px;">
+      <img src ="maharaj.jpg" width="300px";height:300px; class="card-img-top">
+      <div class ="card-header"><h3>Maharajas' Express</h3>
+     </div>
+      <div class="card-body">Redefining Royality,luxury and Comfort Maharajas'express takes you on a sojourn to the era of bygone ststely spelendour of princely states.Sylvan furnishings,elegant ambience for an "Experience Unsurpassed".It has been a winner of "world's Leading Luxury train"by World Travel Awards consecutively for last six years. </div>
+      <div class="card-footer "><b>Read more</b></div>
+      </div>
+        </td>
+        <td>
+         <div class ="card" style="margin:30px;width:300px;">
+         <img src ="package.jpg" width="300px";height:50px; class="card-img-top">
+         <div class ="card-header"><h3>International pacakages</h3>
+        </div>
+         <div class="card-body">Best deals in international holiday pacakages and handpicked by IRCTC and for dubai,srilanka,honkong,china,macau and bhutan,nepal,UK and europe and australia etc.The pacakages are inclusive of sight seeing and meals ,visa charges and over sees and medical insurance to give u a hassle-free and memorable experience</div>
+         <div class="card-footer "><b>Read more</b></div>
+         
+         </td>
+         <td>
+             <div class ="card" style="margin:30px;width:300px;">
+             <img src ="domestic air.jpg" width="300px";height:300px; class="card-img-top">
+             <div class ="card-header"><h3>Domestic Air Packages</h3>
+            </div>
+             <div class="card-body">Be it the spiritual devotes seeking blessings of Tirupathi,shirdi,or matha vaishnavi devi are leisure traveller wanting to relish the blue mountains of north east sand-doons of rajasthan,hamlets of ladak,wonders of himalayas and serene lakes. </div>
+             <div class="card-footer "><b>Read more</b></div>
+             </div>
+               </td>
+     </tr>
+ 
+      
+     
+     
+     
+     <scirpt src="js/bootstrap.min.js"></scirpt>
+ </body>
+ </table>
+ 
+ </html>
